@@ -13,7 +13,7 @@ textoA.grid(column=0, row=0, padx=10, pady=10)
 
 #operações
 def Ppcalc():
-    Pp = DoubleVar(1.00)*h*bw*DoubleVar(25.00) 
+    Pp = DoubleVar(1.00)*h_entry()*bw_entry()*DoubleVar(25.00) 
     R = Pp
 
 #entrada de vlaores
