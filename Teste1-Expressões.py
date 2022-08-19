@@ -13,21 +13,22 @@ textoA.grid(column=0, row=0, padx=10, pady=10)
 
 #operações
 def Ppcalc():
-    Pp = DoubleVar(1.00)*h_entry()*bw_entry()*DoubleVar(25.00) 
-    R = Pp
+    h = float(h_entry.get())
+    bw = float(bw_entry.get())
+    Pp = 1.0*h*bw*25.0 
+    
+    Pesoproprio.config(text=round(Pp))
 
 #entrada de vlaores
-h = DoubleVar()
-bw = DoubleVar()
 
 h_entryText = Label(openwindow, text="Valor de 'h'")
 h_entryText.grid(column=0, row=1, **padding)
-h_entry = ttk.Entry(openwindow, textvariable=h)
+h_entry = ttk.Entry(openwindow, textvariable="h")
 h_entry.grid(column=1, row=1, **padding)
 
 bw_entryText = Label(openwindow, text="Valor de 'bw'")
 bw_entryText.grid(column=0, row=2, **padding)
-bw_entry = ttk.Entry(openwindow, textvariable=bw)
+bw_entry = ttk.Entry(openwindow, textvariable="bw")
 bw_entry.grid(column=1, row=2, **padding)
 
 #botão para resultado
@@ -35,7 +36,7 @@ botao = Button(openwindow, text="Calcular", command=Ppcalc)
 botao.grid(column=0, row=3, **padding)
 
 #resultados
-Pesoproprio = Label(openwindow, text="R")
+Pesoproprio = Label(openwindow, text="")
 Pesoproprio.grid(column=0, row=4, **padding)
 
 openwindow.mainloop()
