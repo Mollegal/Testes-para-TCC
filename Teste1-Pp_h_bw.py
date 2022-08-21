@@ -19,7 +19,7 @@ def Ppcalc():
     
     Pesoproprio.config(text=round(Pp))
 
-#entrada de vlaores
+#entrada de valores
 
 h_entryText = Label(openwindow, text="Valor de 'h'")
 h_entryText.grid(column=0, row=1, **padding)
