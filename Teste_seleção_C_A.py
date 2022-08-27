@@ -1,30 +1,28 @@
-from cgitb import text
 import tkinter
 import customtkinter
 
 
-#padrão
 
-customtkinter.set_appearance_mode("System")
-customtkinter.set_default_color_theme("green")
+App = customtkinter.CTk()
+App.geometry("320x200")
+App.title("TEste Menu concreto")
 
-#Janela
+#Equação
+def resultado_concreto():
+    Mpa = float(Menu_Concreto.get())
+    Fcd= (Mpa*0.85)/1.14
+    Label_resultado.config(text=round(Fcd, 1))
 
-janela = customtkinter.CTk()
-janela.title("Teste-Concreto e Aço")
+#MenuBox
+Menu_Concreto = customtkinter.CTkComboBox(App, values=["20", "25", "30"])
+Menu_Concreto.grid(column=0, row=0, padx=10, pady=10)
 
+#Botão
+B_resultado = customtkinter.CTkButton(App, text="Resultado", command=resultado_concreto)
+B_resultado.grid(column=0, row=1, padx=10, pady=10)
 
-#concreto
+#Label
+Label_resultado = customtkinter.CTkLabel(App, text="")
+Label_resultado.grid(column=0, row=3, padx=1, pady=10)
 
-Bconcreto = customtkinter.CTkOptionMenu(master=janela, values=["C20", "C25", "C30"])
-Bconcreto.grid(column=0, row=0, padx=20, pady=20)
-
-Testesaida = customtkinter.CTkLabel(master=janela, text="")
-Testesaida.grid(column=0, row=1, padx=20, pady=20)
-
-
-
-
-
-
-janela.mainloop()
+App.mainloop()

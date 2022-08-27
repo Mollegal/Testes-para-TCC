@@ -1,5 +1,4 @@
 import tkinter
-from tkinter import DoubleVar, ttk
 import customtkinter
 
 #definindo padrões
