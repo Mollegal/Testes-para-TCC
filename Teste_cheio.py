@@ -33,4 +33,13 @@ label_aco.grid(column=1, row=0, padx=20, pady=12)
 menu_aco = customtkinter.CTkComboBox(master=left_frame, values=["CA25", "CA50", "CA60"])
 menu_aco.grid(column=1, row=1, padx=10, pady=10)
 
+#entry valores
+#mk
+label_mk = customtkinter.CTkLabel(master= left_frame, text="Mk")
+label_mk.grid(column= 0, row= 2, padx=10, pady=10)
+entry_mk = customtkinter.CTkEntry(master= left_frame, justify="center")
+entry_mk.grid(column=0, row=3, padx=10, pady=10)
+#
+
+
 App.mainloop()
