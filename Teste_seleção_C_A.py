@@ -10,7 +10,7 @@ App.title("TEste Menu concreto")
 #Equação
 def resultado_concreto():
     Mpa = float(Menu_Concreto.get())
-    Fcd= (Mpa*0.85)/1.14
+    Fcd= Mpa/1.14
     Label_resultado.config(text=round(Fcd, 1))
 
 #MenuBox
