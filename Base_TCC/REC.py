@@ -1,13 +1,14 @@
 import tkinter
 import customtkinter
-
+import Ajuda
 
 #criando janela#
 App = customtkinter.CTk()
 App.geometry("880x480")
 App.title("Testes Cheio")
 
-#Criando frames#
+#-----Criando frames-----#//
+
 App.grid_columnconfigure(1, weight=1)
 App.grid_rowconfigure(0, weight=1)
 
@@ -22,7 +23,7 @@ left_frame.rowconfigure(8, minsize=50) #linha fantasma com espaçamento
 right_frame = customtkinter.CTkFrame(master=App)
 right_frame.grid(column=1, row=0, padx=10, pady=10, sticky="nswe")
 
-#-#-#-#-#-#-def-#-#-#-#-#-#-#
+#-----def-----#//
 
 #Créditos--
 def creditos():
@@ -35,9 +36,16 @@ def creditos():
     label_creditos1.grid(column=0, row=0, padx=50, pady=20)
     label_creditos2 = customtkinter.CTkLabel(master=j_creditos, text="Gabriel Rodrigues Mol", text_font=("Arial", 12))
     label_creditos2.grid(column=0, row=1, padx=20)
+    
+#App de Ajuda--
+def ajudaapp():
+    
+    Ajuda.ajudapp()
+
+#Calcular--
 
 
-#-#-#-#-#-#-#-#-#-#-#-#-#
+#-----Frame Esquerda-----#
 
 #Seleção de aço e concreto#
 label_concreto = customtkinter.CTkLabel(master=left_frame, text="Concreto")
@@ -81,7 +89,7 @@ button_resultado = customtkinter.CTkButton(master= left_frame, text="Resultado",
 button_resultado.grid(column=0, columnspan= 2, row= 7, padx= 10, pady=10)
 
 #ajuda
-button_ajuda = customtkinter.CTkButton(master= left_frame, text="Ajuda", command="")
+button_ajuda = customtkinter.CTkButton(master= left_frame, text="Ajuda", command=ajudaapp)
 button_ajuda.grid(column=0, row= 9, padx=10, pady=10)
 
 #creditos#
