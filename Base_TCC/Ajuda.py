@@ -3,6 +3,8 @@ import customtkinter
 
 def ajudapp():
     
+    #Definindo Tema
+    
     #Criando janela
     ajuda = customtkinter.CTk()
     ajuda.geometry("400x400")

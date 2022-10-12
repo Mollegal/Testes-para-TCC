@@ -2,6 +2,12 @@ import tkinter
 import customtkinter
 import Ajuda
 
+
+#Definindo tema
+
+customtkinter.set_appearance_mode("light")
+customtkinter.set_default_color_theme("blue")
+
 #criando janela#
 App = customtkinter.CTk()
 App.geometry("880x480")
