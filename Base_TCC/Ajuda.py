@@ -1,5 +1,6 @@
 import tkinter
 import customtkinter
+from PIL import Image, ImageTk
 
 def ajudapp():
     
@@ -10,8 +11,12 @@ def ajudapp():
     ajuda.geometry("400x400")
     ajuda.title("Ajuda")
     
+    #Paramentros Imagens
+    imgteste = tkinter.PhotoImage(file="./Images/Teste.jpg")
+    
+    
     #adicionando imagem
-    label = customtkinter.CTkLabel(master=ajuda, text="teste")
+    label = customtkinter.CTkLabel(master=ajuda, image="imgteste")
     label.pack()
 
 

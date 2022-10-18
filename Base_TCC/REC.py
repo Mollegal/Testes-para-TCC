@@ -1,5 +1,6 @@
 import tkinter
 import customtkinter
+from PIL import Image, ImageTk
 import Ajuda
 
 
