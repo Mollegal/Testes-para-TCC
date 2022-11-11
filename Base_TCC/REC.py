@@ -62,7 +62,7 @@ menu_concreto.grid(column=0, row=1, padx=10, pady=0)
 
 label_aco = customtkinter.CTkLabel(master=left_frame, text="Aço")
 label_aco.grid(column=1, row=0, padx=20, pady=12)
-menu_aco = customtkinter.CTkComboBox(master=left_frame, values=["CA25", "CA50", "CA60"])
+menu_aco = customtkinter.CTkComboBox(master=left_frame, values=["25", "50", "60"])
 menu_aco.grid(column=1, row=1, padx=10, pady=10)
 
 #entry valores#
