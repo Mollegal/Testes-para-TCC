@@ -56,39 +56,39 @@ def ajudaapp():
 
 #Seleção de aço e concreto#
 label_concreto = customtkinter.CTkLabel(master=left_frame, text="Concreto")
-label_concreto.grid(column=0, row=0, padx=20, pady=12)
+label_concreto.grid(column=0, row=0, padx=20, pady=10)
 menu_concreto = customtkinter.CTkComboBox(master=left_frame, values=["20", "25", "30"])
 menu_concreto.grid(column=0, row=1, padx=10, pady=0)
 
 label_aco = customtkinter.CTkLabel(master=left_frame, text="Aço")
-label_aco.grid(column=1, row=0, padx=20, pady=12)
+label_aco.grid(column=1, row=0, padx=20, pady=10)
 menu_aco = customtkinter.CTkComboBox(master=left_frame, values=["25", "50", "60"])
-menu_aco.grid(column=1, row=1, padx=10, pady=10)
+menu_aco.grid(column=1, row=1, padx=10, pady=0)
 
 #entry valores#
 #h
-label_h = customtkinter.CTkLabel(master= left_frame, text="h")
+label_h = customtkinter.CTkLabel(master= left_frame, text="h (cm)")
 label_h.grid(column= 0, row= 2, padx=10, pady=10)
 entry_h = customtkinter.CTkEntry(master= left_frame, justify="center")
-entry_h.grid(column= 0, row = 3, padx=10, pady=10)
+entry_h.grid(column= 0, row = 3, padx=10, pady=0)
 
 #bw
-label_bw = customtkinter.CTkLabel(master= left_frame, text="bw")
+label_bw = customtkinter.CTkLabel(master= left_frame, text="bw (cm)")
 label_bw.grid(column= 1, row= 2, padx=10, pady=10)
 entry_bw = customtkinter.CTkEntry(master= left_frame, justify="center")
-entry_bw.grid(column= 1, row= 3, padx=10, pady=10)
+entry_bw.grid(column= 1, row= 3, padx=10, pady=0)
 
 #c
-label_c = customtkinter.CTkLabel(master= left_frame, text="Cobrimento")
+label_c = customtkinter.CTkLabel(master= left_frame, text="Cobrimento (cm)")
 label_c.grid(column= 0, row= 4, padx=10, pady=10)
 entry_c = customtkinter.CTkEntry(master= left_frame, justify="center")
-entry_c.grid(column=0, row= 5, padx=10, pady=10)
+entry_c.grid(column=0, row= 5, padx=10, pady=0)
 
 #mk
-label_mk = customtkinter.CTkLabel(master= left_frame, text="Mk")
+label_mk = customtkinter.CTkLabel(master= left_frame, text="Mk (N.m)")
 label_mk.grid(column=1, row=4, padx=10, pady=10)
 entry_mk = customtkinter.CTkEntry(master= left_frame, justify="center")
-entry_mk.grid(column=1, row=5, padx=10, pady=10)
+entry_mk.grid(column=1, row=5, padx=10, pady=0)
 
 #botões#
 #resultado
