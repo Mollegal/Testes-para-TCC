@@ -9,8 +9,8 @@ app = customtkinter.CTk()
 
 img = ImageTk.PhotoImage(Image.open(pastaApp+"\\teste.jpg"))
 
-label = customtkinter.CTkLabel(master=app, image=img)
-label.pack()
+imglabel = customtkinter.CTkLabel(master=app, image=img)
+imglabel.pack()
 
 
 

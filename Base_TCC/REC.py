@@ -47,7 +47,7 @@ def creditos():
 #App de Ajuda--
 def ajudaapp():
     
-    Ajuda.ajudapp()
+    Ajuda.ajuda()
 
 #Calcular--
 
